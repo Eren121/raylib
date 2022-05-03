@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(raylib)
+project(raylib LANGUAGES CXX)
 
 # Directory for easier includes
 # Anywhere you see include(...) you can check <root>/cmake for that file
