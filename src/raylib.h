@@ -184,26 +184,32 @@
     #define RL_BOOL_TYPE
 #endif
 
-// Vector2, 2 components
-typedef struct Vector2 {
-    float x;                // Vector x component
-    float y;                // Vector y component
-} Vector2;
+#ifndef RL_USERTYPE_VECTOR2
+    // Vector2, 2 components
+    typedef struct Vector2 {
+        float x;                // Vector x component
+        float y;                // Vector y component
+    } Vector2;
+#endif
 
-// Vector3, 3 components
-typedef struct Vector3 {
-    float x;                // Vector x component
-    float y;                // Vector y component
-    float z;                // Vector z component
-} Vector3;
+#ifndef RL_USERTYPE_VECTOR3
+    // Vector3, 3 components
+    typedef struct Vector3 {
+        float x;                // Vector x component
+        float y;                // Vector y component
+        float z;                // Vector z component
+    } Vector3;
+#endif
 
-// Vector4, 4 components
-typedef struct Vector4 {
-    float x;                // Vector x component
-    float y;                // Vector y component
-    float z;                // Vector z component
-    float w;                // Vector w component
-} Vector4;
+#ifndef RL_USERTYPE_VECTOR4
+    // Vector4, 4 components
+    typedef struct Vector4 {
+        float x;                // Vector x component
+        float y;                // Vector y component
+        float z;                // Vector z component
+        float w;                // Vector w component
+    } Vector4;
+#endif
 
 // Quaternion, 4 components (Vector4 alias)
 typedef Vector4 Quaternion;
